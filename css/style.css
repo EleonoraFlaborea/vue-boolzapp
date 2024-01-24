@@ -38,6 +38,7 @@ img{
 }
 
 .contacts-body{
+    overflow: auto;
 }
 
 
@@ -51,4 +52,9 @@ img{
 .messages-header{
     height: 80px;
     background-color: #EAEAEA;
+}
+
+.messages-body{
+    min-height: 400px;
+    background-image: url(../img/mine.jpg);
 }
