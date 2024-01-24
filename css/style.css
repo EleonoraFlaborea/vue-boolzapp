@@ -9,6 +9,9 @@
 }
 
 /*Utils*/
+img{
+    width: 60px;
+}
 
 
 /*CONTACTS*/
@@ -20,13 +23,18 @@
 }
 
 .contacts-header{
-    height: 80px;
+    min-height: 80px;
     background-color: #EAEAEA;
 }
 
 .alert{
     min-height: 80px;
     background-color: #8EDAFC;
+    margin-bottom: 0%;
+}
+
+.search-bar{
+   background-color: #FAFAFA;
 }
 
 
