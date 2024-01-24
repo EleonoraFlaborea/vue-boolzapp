@@ -22,16 +22,29 @@
     <script defer src="js/script.js"></script>
 </head>
 
-<body class="body-container">
+<body id="root" class="body-container">
     <!--CONTAINER TOTALE-->
     <div class="container pt-4">
         <div class="row">
 
           <!--COL-CONTACTS-->
-          <div id="col-contacts" class="col-4 border border-primary">CONTATTI</div>
+          <div id="col-contacts" class="col-4 border border-primary">
+            <div class="contacts-header"></div>
+            <div class="alert"></div>
+            <!--<div class="search-bar"></div>
+            <div class="contacts-body"></div>-->
+
+          </div>
          
           <!--COL MESSAGES-->
-          <div id="col-messages" class="col-8 border border-danger">MESSAGGI</div>
+          <div id="col-messages" class="col-8 border border-danger">
+            <div class="messages-header"></div>
+            <!--<div class="messages-body"></div>
+            <div class="messages-footer"></div>-->
+
+
+
+        </div>
        
         </div>
     </div>

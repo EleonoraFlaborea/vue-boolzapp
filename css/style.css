@@ -8,14 +8,36 @@
     );
 }
 
-
 /*Utils*/
 
 
+/*CONTACTS*/
 #col-contacts{
     min-height: 800px;
+    padding-left: 0%;
+    padding-right: 0%;
+
 }
 
+.contacts-header{
+    height: 80px;
+    background-color: #EAEAEA;
+}
+
+.alert{
+    height: 80px;
+    background-color: #8EDAFC;
+}
+
+
+/*MESSAGES*/
 #col-messages{
     min-height: 800px;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.messages-header{
+    height: 80px;
+    background-color: #EAEAEA;
 }
