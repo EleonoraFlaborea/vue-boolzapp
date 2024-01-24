@@ -1,3 +1,16 @@
+/*Generics*/
+.body-container{
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        #0B9688 10%,
+        #DCDBD2 10% 100% 
+    );
+}
+
+
+/*Utils*/
+
 
 #col-contacts{
     min-height: 800px;
