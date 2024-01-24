@@ -18,15 +18,15 @@ i{
     color: #B1B1B1;
 }
 
-
 /*CONTACTS*/
 #col-contacts{
-    max-height: 800px;
+    max-height: 950px;
     padding-left: 0%;
     padding-right: 0%;
     background-color: #FFFFFF
 }
 
+/*Header*/
 .contacts-header{
     min-height: 80px;
     background-color: #EAEAEA;
@@ -36,6 +36,7 @@ i{
     margin-bottom: 0%;
 }
 
+/*Alert*/
 .alert-section{
     min-height: 80px;
     background-color: #8EDAFC;
@@ -49,10 +50,12 @@ i{
     color: #8EDAFC;
 }
 
+/*Search bar*/
 .search-bar{
    background-color: #FAFAFA;
 }
 
+/*Body*/
 .contacts-body{
     overflow: auto;
 }
@@ -60,33 +63,40 @@ i{
 
 /*MESSAGES*/
 #col-messages{
-    max-height: 800px;
+    max-height: 950px;
     padding-left: 0%;
     padding-right: 0%;
 }
 
+/*Header*/
 .messages-header{
     height: 80px;
     background-color: #EAEAEA;
 }
 
+/*Body*/
 .messages-body{
-    min-height: 640px;
+    min-height: 700px;
     background-image: url(../img/mine.jpg);
-    background-repeat: repeat;
-    
+    background-repeat: repeat;  
 }
 
+/*Mex*/
 .sent-mex{
-
+    background-color: #D5F9BB;
 }
 
 .received-mex{
-    
+    background-color: #FFFFFF;
 }
 
+/*Footer*/
 .messages-footer i{
-    height: 80px;
-
+    height: 85px;
     color: rgb(98, 94, 94);
 }
+
+.messages-footer{
+    background-color: #F3EEEA;
+}
+
