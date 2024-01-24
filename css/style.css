@@ -11,6 +11,11 @@
 /*Utils*/
 img{
     width: 60px;
+    border-radius: 50%;
+}
+
+i{
+    color: #B1B1B1;
 }
 
 
@@ -27,10 +32,20 @@ img{
     background-color: #EAEAEA;
 }
 
-.alert{
+.user-name{
+    margin-bottom: 0%;
+}
+
+.alert-section{
     min-height: 80px;
     background-color: #8EDAFC;
     margin-bottom: 0%;
+}
+
+.bell-icon{
+    background-color: white;
+    border-radius: 50%;
+    padding: 22px 8px;
 }
 
 .search-bar{
