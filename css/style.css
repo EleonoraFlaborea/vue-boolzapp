@@ -21,7 +21,7 @@ i{
 
 /*CONTACTS*/
 #col-contacts{
-    min-height: 800px;
+    max-height: 800px;
     padding-left: 0%;
     padding-right: 0%;
     background-color: #FFFFFF
@@ -59,7 +59,7 @@ i{
 
 /*MESSAGES*/
 #col-messages{
-    min-height: 800px;
+    max-height: 800px;
     padding-left: 0%;
     padding-right: 0%;
 }
