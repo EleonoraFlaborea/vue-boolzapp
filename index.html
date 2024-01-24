@@ -78,26 +78,16 @@
                 <div class="contacts-body">
                     <div class="container pt-2">
                         <div class="row">
-                            <div class="col-sm-12 d-flex py-2 border-bottom">
-                               <img src="img/avatar_1.jpg" alt="avatar_1">
-                               <p class="user-name ps-2">Michele</p>
-                            </div>
-                            <div class="col-sm-12 d-flex py-2 border-bottom">
-                               <img src="img/avatar_2.jpg" alt="avatar_1">
-                               <p class="user-name ps-2">Fabio</p>
-                            </div>
-                            <div class="col-sm-12 d-flex py-2 border-bottom">
-                               <img src="img/avatar_3.jpg" alt="avatar_1">
-                               <p class="user-name ps-2">Samuele</p>
-                            </div>
-                            <div class="col-sm-12 d-flex py-2 border-bottom">
-                               <img src="img/avatar_4.jpg" alt="avatar_1">
-                               <p class="user-name ps-2">Luisa</p>
+                            <div v-for="contact in contacts" class="col-sm-12 d-flex py-2 border-bottom">
+                               <img :src="`img/avatar${contact.avatar}.jpg`" alt="{{contact.name}}">
+                               <p class="user-name ps-2">{{contact.name}}</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            
 
             <!--COL MESSAGES-->
             <div id="col-messages" class="col-8 border border-danger">
@@ -128,12 +118,12 @@
                 <div class="messages-body"></div>
  
                 <!--footer-->
-                <div class="messages-footer">
-                    <i class="fa-regular fa-face-smile"></i>
-                    <div class="input-group flex-nowrap">
+                <div class="messages-footer d-flex align-items-center justify-content-end">
+                    <i class="fa-regular fa-face-smile fa-xl ps-3 d-flex align-items-center"></i>
+                    <div class="input-group mx-5">
                       <input type="text" class="form-control" placeholder="Scrivi un messaggio">
                     </div>
-                    <i class="fa-solid fa-microphone"></i>
+                    <i class="fa-solid fa-microphone fa-xl pe-3 d-flex align-items-center"></i>
                 </div>
        
             </div>

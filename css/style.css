@@ -46,6 +46,7 @@ i{
     background-color: white;
     border-radius: 50%;
     padding: 22px 8px;
+    color: #8EDAFC;
 }
 
 .search-bar{
@@ -70,6 +71,22 @@ i{
 }
 
 .messages-body{
-    min-height: 400px;
+    min-height: 640px;
     background-image: url(../img/mine.jpg);
+    background-repeat: repeat;
+    
+}
+
+.sent-mex{
+
+}
+
+.received-mex{
+    
+}
+
+.messages-footer i{
+    height: 80px;
+
+    color: rgb(98, 94, 94);
 }
