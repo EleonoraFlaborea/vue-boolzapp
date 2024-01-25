@@ -22,111 +22,115 @@
     <script defer src="js/script.js"></script>
 </head>
 
-<body id="root" class="body-container">
+<body>
     <!--CONTAINER TOTALE-->
-    <div class="container pt-4">
-        <div class="row">
-
-            <!--COL-CONTACTS-->
-            <div id="col-contacts" class="col-4 border-end border-primary">
-            
-              <!--header-->
-                <div class="contacts-header">
-                  <div class="container pt-2">
-                    <div class="row">
-                      <div class="col-sm-8 d-flex align-items-center">
-                        <img src="img/avatar_io.jpg" alt="avatar_1">
-                        <p class="user-name ps-2">Nome Utente</p>
+    <div id="root" class="body-container">
+        <div class="container pt-4">
+            <div class="row">
+    
+                <!--COL-CONTACTS-->
+                <div id="col-contacts" class="col-4 border-end border-primary">
+                
+                  <!--header-->
+                    <div class="contacts-header">
+                      <div class="container pt-2">
+                        <div class="row">
+                          <div class="col-sm-8 d-flex align-items-center">
+                            <img :src="`img/avatar${user.avatar}.jpg`" :alt="user.name">
+                            <p class="user-name ps-2">{{user.name}}</p>
+                          </div>
+                        
+                          <div class="col-sm-4 d-flex align-items-center">
+                            <i class="fa-solid fa-circle-notch fa-xl pe-3"></i>
+                            <i class="fa-solid fa-message fa-xl pe-3"></i> 
+                            <i class="fa-solid fa-ellipsis-vertical fa-xl pe-3"></i>
+                          </div>
+                        </div>
                       </div>
-                    
-                      <div class="col-sm-4 d-flex align-items-center">
-                        <i class="fa-solid fa-circle-notch fa-xl pe-3"></i>
-                        <i class="fa-solid fa-message fa-xl pe-3"></i> 
-                        <i class="fa-solid fa-ellipsis-vertical fa-xl pe-3"></i>
-                      </div>
+                    </div>
+    
+                  <!--alert-->
+                  <div class="alert-section">
+                    <div class="container">
+                        <div class="row pt-3">
+                          <div class="col-sm-2 d-flex align-items-center">
+                            <i class="fa-solid fa-bell-slash fa-xl bell-icon"></i>
+                          </div>
+                        
+                          <div class="col-sm-10 ps-4">
+                            <p class="mb-0">Ricevi notifiche di nuovi messaggi</p>
+                            <p class="mb-0 text-body-secondary text-decoration-underline">Attiva notifiche desktop</p>
+                          </div>
+                        </div>
                     </div>
                   </div>
-                </div>
-
-              <!--alert-->
-              <div class="alert-section">
-                <div class="container">
-                    <div class="row pt-3">
-                      <div class="col-sm-2 d-flex align-items-center">
-                        <i class="fa-solid fa-bell-slash fa-xl bell-icon"></i>
-                      </div>
-                    
-                      <div class="col-sm-10 ps-4">
-                        <p class="mb-0">Ricevi notifiche di nuovi messaggi</p>
-                        <p class="mb-0 text-body-secondary text-decoration-underline">Attiva notifiche desktop</p>
-                      </div>
+    
+                  <!--search bar-->
+                  <div class="search-bar px-2 pt-3 pb-1">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </span>
+                      <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat">
                     </div>
-                </div>
-              </div>
-
-              <!--search bar-->
-              <div class="search-bar px-2 pt-3 pb-1">
-                <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </span>
-                  <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat">
-                </div>
-              </div>
-
-              <!--body-->
-                <div class="contacts-body">
-                    <div class="container pt-2">
-                        <div class="row">
-                            <div v-for="contact in contacts" class="col-sm-12 d-flex py-2 border-bottom">
-                               <img :src="`img/avatar${contact.avatar}.jpg`" alt="{{contact.name}}">
-                               <p class="user-name ps-2">{{contact.name}}</p>
+                  </div>
+    
+                  <!--body-->
+                    <div class="contacts-body">
+                        <div class="container pt-2">
+                            <div class="row">
+                                <div v-for="contact in contacts" class="col-sm-12 d-flex py-2 border-bottom">
+                                   <img :src="`img/avatar${contact.avatar}.jpg`" alt="{{contact.name}}">
+                                   <p class="user-name ps-2">{{contact.name}}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            
-
-            <!--COL MESSAGES-->
-            <div id="col-messages" class="col-8">
-
-                <!--header-->
-                 <div class="messages-header pt-2">
-                     <div class="contacts-header">
-                         <div class="container">
-                             <div class="row">
-                                 <div class="col-sm-5 d-flex align-items-center">
-                                   <img src="img/avatar_1.jpg" alt="avatar_1">
-                                     <div class="flex-wrap gap-2 ps-2">
-                                       <p class="mb-0">Michele</p>
-                                       <p class="mb-0 text-body-secondary">Ultimo accesso oggi alle</p>
+    
+                
+    
+                <!--COL MESSAGES-->
+                <div id="col-messages" class="col-8">
+    
+                    <!--header-->
+                     <div class="messages-header pt-2">
+                         <div class="contacts-header">
+                             <div class="container">
+                                 <div class="row">
+                                     <div class="col-sm-5 d-flex align-items-center">
+                                       <img src="img/avatar_1.jpg" alt="avatar_1">
+                                         <div class="flex-wrap gap-2 ps-2">
+                                           <p class="mb-0">Michele</p>
+                                           <p class="mb-0 text-body-secondary">Ultimo accesso oggi alle</p>
+                                         </div>
+                                     </div>
+                           
+                                     <div class="col-sm-7 d-flex align-items-center justify-content-end">
+                                        <i class="fa-solid fa-magnifying-glass fa-xl pe-3"></i>
+                                        <i class="fa-solid fa-paperclip fa-xl pe-3"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical fa-xl pe-3"></i>
                                      </div>
                                  </div>
-                       
-                                 <div class="col-sm-7 d-flex align-items-center justify-content-end">
-                                    <i class="fa-solid fa-magnifying-glass fa-xl pe-3"></i>
-                                    <i class="fa-solid fa-paperclip fa-xl pe-3"></i>
-                                    <i class="fa-solid fa-ellipsis-vertical fa-xl pe-3"></i>
-                                 </div>
                              </div>
-                         </div>
-                     </div> 
-                 </div>
-                <!--body-->
-                <div class="messages-body"></div>
- 
-                <!--footer-->
-                <div class="messages-footer d-flex align-items-center justify-content-end">
-                    <i class="fa-regular fa-face-smile fa-xl ps-3 d-flex align-items-center"></i>
-                    <div class="input-group mx-5 write-bar">
-                      <input type="text" class="form-control" placeholder="Scrivi un messaggio">
+                         </div> 
+                     </div>
+                    <!--body-->
+                    <div class="messages-body">
+                        <span class="sent-mex d-flex justify-content-end ps-2">Hai portato a spasso il cane?</span>
                     </div>
-                    <i class="fa-solid fa-microphone fa-xl pe-3 d-flex align-items-center"></i>
+     
+                    <!--footer-->
+                    <div class="messages-footer d-flex align-items-center justify-content-end">
+                        <i class="fa-regular fa-face-smile fa-xl ps-3 d-flex align-items-center"></i>
+                        <div class="input-group mx-5 write-bar">
+                          <input type="text" class="form-control" placeholder="Scrivi un messaggio">
+                        </div>
+                        <i class="fa-solid fa-microphone fa-xl pe-3 d-flex align-items-center"></i>
+                    </div>
+           
                 </div>
-       
-            </div>
+        </div>
     </div>
     
 </body>

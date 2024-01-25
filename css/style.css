@@ -1,7 +1,7 @@
 /*Generics*/
 .body-container{
     height: 100vh;
-    background: linear-gradient(
+    background-image: linear-gradient(
         to bottom,
         #0B9688 10%,
         #DCDBD2 10% 100% 
@@ -83,10 +83,13 @@ i{
 
 /*Mex*/
 .sent-mex{
+    padding: 20px 15px;
     background-color: #D5F9BB;
+
 }
 
 .received-mex{
+    padding: 20px 15px;
     background-color: #FFFFFF;
 }
 
