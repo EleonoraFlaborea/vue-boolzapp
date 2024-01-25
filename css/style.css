@@ -36,6 +36,11 @@ i{
     margin-bottom: 0%;
 }
 
+.single-contact:hover{
+    cursor: pointer;
+    background-color: #bcb7b7a2;
+}
+
 /*Alert*/
 .alert-section{
     min-height: 80px;
@@ -76,21 +81,33 @@ i{
 
 /*Body*/
 .messages-body{
-    min-height: 700px;
+    display: flex;
+}
+
+.backgroung-image{
     background-image: url(../img/mine.jpg);
-    background-repeat: repeat;  
+    min-height: 700px;
 }
 
 /*Mex*/
 .sent-mex{
-    padding: 20px 15px;
-    background-color: #D5F9BB;
-
+    justify-content: flex-end;
 }
 
 .received-mex{
-    padding: 20px 15px;
+    justify-content: flex-start;
+}
+
+.sent-mex .message {
+    background-color: #D5F9BB;
+}
+
+.received-mex .message {
     background-color: #FFFFFF;
+}
+
+.time-size{
+    font-size: 12px;
 }
 
 /*Footer*/
