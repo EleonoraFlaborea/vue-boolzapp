@@ -192,8 +192,14 @@ const app = createApp ({
                 }
               ],
             }
-        ],    
+        ],  
+        currentContact: 0,  
     }),
+    methods: {
+        clickContact(){
+          currentContact = 
+        }
+    }
 })
 
 app.mount('#root');
