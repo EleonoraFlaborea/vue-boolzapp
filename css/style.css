@@ -98,11 +98,11 @@ i{
     justify-content: flex-start;
 }
 
-.sent-mex .message {
+.sent .message {
     background-color: #D5F9BB;
 }
 
-.received-mex .message {
+.received .message {
     background-color: #FFFFFF;
 }
 
